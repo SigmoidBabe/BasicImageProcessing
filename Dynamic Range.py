@@ -34,7 +34,7 @@ def hitung_pantulan(img):
             a, b, c = image[i, j]
             if a >= 229 and b >= 229 and c >= 229:
                 image[i, j] = 0, 255, 0
-                # Menghitung Jumlah pixel yang merupakan pantulan cahaya
+                # Counting the specular reflection of the image
                 count_pantulan = count_pantulan + 1
     print("{} memiliki pantulan cahaya sebanyak : {}%".format(img, (count_pantulan*100)/(tinggi*lebar)))
 
